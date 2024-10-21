@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - BloomPetals</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu_navbar">
+            <div class="menu_nav">
+                <a href="index.html">Home</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" name="search" placeholder="Recherche ..." class="input_search">
+                </form>
+            </div>
+        </nav>
+        <details class="hamburger">
+            <summary>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </summary>
+            <nav class="navbar">
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="entreprise.html">Entreprise</a>
+                    <a href="realisations.html">Réalisations</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <input type="text" name="search" placeholder="Recherche ..." class="input_search">
+                    </form>
+                </div>
+            </nav>
+        </details>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Contactez-nous</h1>
+
+            <section class="contact-form">
+                <h2>Formulaire de Contact</h2>
+                <form action="#" method="post">
+
+                    <label for="civilite">Civilité:</label>
+                    <select id="civilite" name="civilite" required>
+                        <option value="" disabled selected>Choisissez votre civilité</option>
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                    </select>
+
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="adresse">Adresse postale:</label>
+                    <textarea id="adresse" name="adresse" rows="4" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="politique" required>
+                        J'accepte la politique de confidentialité.
+                    </label>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
